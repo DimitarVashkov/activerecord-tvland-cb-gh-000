@@ -2,8 +2,8 @@ class CreateCharacters < ActiveRecord::Migration[4.2]
   #define a change method in which to do the migration
   def change
     create_table :characters do |t|
-      t.string :first_name
-      t.string :last_name
+      t.string :name
+      t.integer
     end
   end
 end
